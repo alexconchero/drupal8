@@ -1,0 +1,28 @@
+uuid: 4394b0d9-bd58-4893-a8f4-264eccfbdef2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multimedia
+    - media.type.image
+    - node.type.recetas
+id: node.recetas.field_multimedia
+field_name: field_multimedia
+entity_type: node
+bundle: recetas
+label: Multimedia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

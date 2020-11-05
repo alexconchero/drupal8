@@ -1,0 +1,34 @@
+uuid: 88a6bbfa-81f6-4616-b1b4-e35aab7036fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pais.field_habitantes
+    - taxonomy.vocabulary.pais
+  module:
+    - text
+id: taxonomy_term.pais.default
+targetEntityType: taxonomy_term
+bundle: pais
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_habitantes:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  langcode: true

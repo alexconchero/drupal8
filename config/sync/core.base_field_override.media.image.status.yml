@@ -1,0 +1,22 @@
+uuid: 2a334c6d-673e-4b54-82b2-17ff4f3dcbb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.status
+field_name: status
+entity_type: media
+bundle: image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

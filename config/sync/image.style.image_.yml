@@ -1,0 +1,7 @@
+uuid: de8350bd-0d67-4ca3-bfa4-44f47e4e22f3
+langcode: es
+status: true
+dependencies: {  }
+name: image_
+label: 'image libros'
+effects: {  }

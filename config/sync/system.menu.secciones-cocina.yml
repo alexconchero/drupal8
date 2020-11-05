@@ -1,0 +1,8 @@
+uuid: fadab573-7ff6-4574-a5c1-842c1daa7afd
+langcode: es
+status: true
+dependencies: {  }
+id: secciones-cocina
+label: 'secciones cocina'
+description: ''
+locked: false

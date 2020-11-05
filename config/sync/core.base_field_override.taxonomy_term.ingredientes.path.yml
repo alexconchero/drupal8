@@ -1,0 +1,20 @@
+uuid: dd7c51bb-866b-4c3e-8abf-f4abe07b44d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingredientes
+  module:
+    - path
+id: taxonomy_term.ingredientes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: ingredientes
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

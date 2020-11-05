@@ -1,0 +1,20 @@
+uuid: fa68b647-de88-480b-81bf-ee259baabc7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cabecera
+  module:
+    - publication_date
+id: node.cabecera.published_at
+field_name: published_at
+entity_type: node
+bundle: cabecera
+label: 'Publicado en'
+description: 'Keep the publication timestamp for each node.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: published_at

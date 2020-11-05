@@ -1,0 +1,22 @@
+uuid: 086209c1-aa3b-4ef0-8c9d-1e9393128ea7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cocina
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cocina_powered
+theme: cocina
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

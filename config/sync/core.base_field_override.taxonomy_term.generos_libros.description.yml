@@ -1,0 +1,20 @@
+uuid: 053f64d0-7e81-4b02-9682-e23eb285780b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.generos_libros
+  module:
+    - text
+id: taxonomy_term.generos_libros.description
+field_name: description
+entity_type: taxonomy_term
+bundle: generos_libros
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: b4e82ddb-f6f3-4715-bddf-7da967f55eed
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.generos_libros
+id: taxonomy_term.generos_libros.status
+field_name: status
+entity_type: taxonomy_term
+bundle: generos_libros
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

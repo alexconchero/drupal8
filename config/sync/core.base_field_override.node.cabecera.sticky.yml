@@ -1,0 +1,22 @@
+uuid: 981b1169-50e9-4fd0-99d6-e0da18859f3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cabecera
+id: node.cabecera.sticky
+field_name: sticky
+entity_type: node
+bundle: cabecera
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

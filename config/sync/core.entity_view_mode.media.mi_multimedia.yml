@@ -1,0 +1,10 @@
+uuid: 34636dd1-2041-4259-a4d8-31400eda3516
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.mi_multimedia
+label: 'Mi multimedia'
+targetEntityType: media
+cache: true

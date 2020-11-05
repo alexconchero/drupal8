@@ -1,0 +1,8 @@
+uuid: 69faf70f-c429-4c40-b7ee-4adea1679ef9
+langcode: es
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image + text'
+revision: 0
+description: ''

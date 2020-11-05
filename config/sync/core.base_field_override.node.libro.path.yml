@@ -1,0 +1,20 @@
+uuid: a760eeec-2009-4f83-99bc-99c0417246f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.libro
+  module:
+    - path
+id: node.libro.path
+field_name: path
+entity_type: node
+bundle: libro
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

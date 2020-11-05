@@ -1,0 +1,132 @@
+uuid: 9e80d37f-6107-4351-a8ac-bc396bbdedab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.recetas.body
+    - field.field.node.recetas.field_autor
+    - field.field.node.recetas.field_categoria
+    - field.field.node.recetas.field_fecha
+    - field.field.node.recetas.field_imagen
+    - field.field.node.recetas.field_ingredientes
+    - field.field.node.recetas.field_multimedia
+    - field.field.node.recetas.field_tiempo_de_coccion
+    - field.field.node.recetas.field_video
+    - image.style.receta_full
+    - node.type.recetas
+  module:
+    - datetime
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_patata:
+      children:
+        - field_fecha
+        - field_autor
+        - field_tiempo_de_coccion
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Text
+id: node.recetas.default
+targetEntityType: node
+bundle: recetas
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autor:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_categoria:
+    weight: 7
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fecha:
+    weight: 7
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_imagen:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: receta_full
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ingredientes:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_multimedia:
+    type: entity_reference_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: mi_multimedia
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tiempo_de_coccion:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: mi_video
+      link: false
+    third_party_settings: {  }
+    region: content
+  titulo_default:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

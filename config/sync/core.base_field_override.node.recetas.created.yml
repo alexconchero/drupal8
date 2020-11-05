@@ -1,0 +1,18 @@
+uuid: 2dbb8f13-0e86-4689-864d-a589e36fb42c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.recetas
+id: node.recetas.created
+field_name: created
+entity_type: node
+bundle: recetas
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

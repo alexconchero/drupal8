@@ -1,0 +1,32 @@
+uuid: 2bc8dab1-b7be-484a-82d3-fd5a8e5855d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.bloque_multimedia
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+  module:
+    - media
+_core:
+  default_config_hash: gUaDZKMQD3lmLKWPn727X3JHVdKJ525g4EJCCcDVAqk
+id: media.remote_video.bloque_multimedia
+targetEntityType: media
+bundle: remote_video
+mode: bloque_multimedia
+content:
+  field_media_oembed_video:
+    type: oembed
+    weight: 0
+    label: hidden
+    settings:
+      max_width: 1024
+      max_height: 500
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

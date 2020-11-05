@@ -1,0 +1,16 @@
+uuid: 69d15cee-7685-48e5-9d1d-6a2b0e27a22d
+langcode: es
+status: true
+dependencies: {  }
+id: node.recetas.display.teaser.titulo
+label: Titulo
+field_name: titulo
+entity_type: node
+bundle: recetas
+context: display
+mode: teaser
+plugin: entity_label
+weight: null
+settings:
+  wrapper: h2
+  class: ''

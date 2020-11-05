@@ -1,0 +1,25 @@
+uuid: 2d95455e-5764-4b87-a97e-0320523dd92e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.secciones-cocina
+  module:
+    - system
+  theme:
+    - bartik
+id: seccionescocina
+theme: bartik
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:secciones-cocina'
+settings:
+  id: 'system_menu_block:secciones-cocina'
+  label: 'secciones cocina'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

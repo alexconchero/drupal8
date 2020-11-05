@@ -1,0 +1,15 @@
+uuid: 788ffda3-a1e6-4b11-af60-3e0c28e56ab1
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera
+label: Cabecera
+effects:
+  ccfeba68-811a-4819-8212-f889206c68c4:
+    uuid: ccfeba68-811a-4819-8212-f889206c68c4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 550
+      anchor: center-center

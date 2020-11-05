@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ .views-row{
+ 	width: 100%;
+ }
+ 
+.field--name-field-imagen, .field--type-image img{
+ 	width: 100%;
+ 	height: auto;
+ }
+.text-formatted, .field--name-body, .field--type-text-with-summary p{
+	 font-weight: 25px;
+	 color:green;
+}

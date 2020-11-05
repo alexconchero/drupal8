@@ -1,0 +1,29 @@
+uuid: 85dec8ee-368d-45fb-a776-810226a498b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.recetas
+    - taxonomy.vocabulary.categoria
+id: node.recetas.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: recetas
+label: Categoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria: categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

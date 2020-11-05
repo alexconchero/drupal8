@@ -1,0 +1,80 @@
+uuid: f558da4f-3b48-4e55-bf05-78f1277879d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recetas.body
+    - field.field.node.recetas.field_autor
+    - field.field.node.recetas.field_categoria
+    - field.field.node.recetas.field_fecha
+    - field.field.node.recetas.field_imagen
+    - field.field.node.recetas.field_ingredientes
+    - field.field.node.recetas.field_multimedia
+    - field.field.node.recetas.field_tiempo_de_coccion
+    - field.field.node.recetas.field_video
+    - image.style.receta_teaser
+    - node.type.recetas
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_text:
+      children:
+        - titulo_teaser
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: text
+id: node.recetas.teaser
+targetEntityType: node
+bundle: recetas
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: receta_teaser
+      image_link: ''
+    third_party_settings: {  }
+  titulo_teaser:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_autor: true
+  field_categoria: true
+  field_fecha: true
+  field_ingredientes: true
+  field_multimedia: true
+  field_tiempo_de_coccion: true
+  field_video: true
+  langcode: true
+  links: true

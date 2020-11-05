@@ -1,0 +1,15 @@
+uuid: 35c3ca4d-69b7-4301-9e7d-a72bd3511125
+langcode: es
+status: true
+dependencies: {  }
+name: receta_teaser
+label: 'Receta teaser'
+effects:
+  763091ab-b96f-42c8-bac0-d0ca11741dd2:
+    uuid: 763091ab-b96f-42c8-bac0-d0ca11741dd2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

@@ -1,0 +1,28 @@
+uuid: 590015ad-034d-4394-91e2-d4fc0921f272
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - media.type.image
+    - node.type.post
+id: node.post.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: post
+label: Imagenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

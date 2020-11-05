@@ -1,0 +1,25 @@
+uuid: a5809e0f-5cc5-4a2c-98dd-769d8e596c12
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cocina
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: cocina_branding
+theme: cocina
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

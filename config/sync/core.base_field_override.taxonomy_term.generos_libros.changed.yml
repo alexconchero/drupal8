@@ -1,0 +1,18 @@
+uuid: 1fde57cf-1997-44f4-affc-3cf6fa4bfd8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.generos_libros
+id: taxonomy_term.generos_libros.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: generos_libros
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

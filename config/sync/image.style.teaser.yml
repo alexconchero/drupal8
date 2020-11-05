@@ -1,0 +1,15 @@
+uuid: 8421287f-78a3-4cf3-94f4-391755030863
+langcode: es
+status: true
+dependencies: {  }
+name: teaser
+label: Teaser
+effects:
+  1e085265-9ac9-4687-8a27-b50dd1a6c1cc:
+    uuid: 1e085265-9ac9-4687-8a27-b50dd1a6c1cc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

@@ -1,0 +1,20 @@
+uuid: b454af87-77b0-4a59-9fee-24214b62b477
+langcode: es
+status: true
+dependencies:
+  theme:
+    - cocina
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cocina_local_actions
+theme: cocina
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

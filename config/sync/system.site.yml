@@ -1,0 +1,14 @@
+uuid: adaa046d-40e9-4623-886d-b5be6a1a6461
+name: 'Recetas de cocina'
+mail: noreply@hiberus.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/6
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

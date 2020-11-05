@@ -1,0 +1,22 @@
+uuid: bec0054a-47d4-4cbf-a54f-5b9e7fb18957
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.libro
+id: node.libro.status
+field_name: status
+entity_type: node
+bundle: libro
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

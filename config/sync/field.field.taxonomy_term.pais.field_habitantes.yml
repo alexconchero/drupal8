@@ -1,0 +1,23 @@
+uuid: d3b72f27-27e4-4337-81ed-85ac4ce2cbfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_habitantes
+    - taxonomy.vocabulary.pais
+id: taxonomy_term.pais.field_habitantes
+field_name: field_habitantes
+entity_type: taxonomy_term
+bundle: pais
+label: habitantes
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,22 @@
+uuid: 462d2c36-1902-4a41-bc71-63148b76f3bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.recetas
+id: node.recetas.sticky
+field_name: sticky
+entity_type: node
+bundle: recetas
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

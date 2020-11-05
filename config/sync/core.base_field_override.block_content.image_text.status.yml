@@ -1,0 +1,22 @@
+uuid: 3096af86-b233-4e51-bebf-57711add416c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.image_text
+id: block_content.image_text.status
+field_name: status
+entity_type: block_content
+bundle: image_text
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

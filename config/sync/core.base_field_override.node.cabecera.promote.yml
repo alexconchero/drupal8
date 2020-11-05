@@ -1,0 +1,22 @@
+uuid: 51e00560-3e21-4d69-8aed-61e7d7bf1085
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cabecera
+id: node.cabecera.promote
+field_name: promote
+entity_type: node
+bundle: cabecera
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

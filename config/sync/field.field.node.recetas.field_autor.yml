@@ -1,0 +1,19 @@
+uuid: 71602913-5b75-4fc2-aa15-87afac333f1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor
+    - node.type.recetas
+id: node.recetas.field_autor
+field_name: field_autor
+entity_type: node
+bundle: recetas
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

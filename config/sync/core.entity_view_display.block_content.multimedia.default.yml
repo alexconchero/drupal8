@@ -1,0 +1,25 @@
+uuid: fc5fd2ef-99fa-48a9-befc-f2fa57977bac
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.multimedia
+    - field.field.block_content.multimedia.body
+    - field.field.block_content.multimedia.field_multimedia
+id: block_content.multimedia.default
+targetEntityType: block_content
+bundle: multimedia
+mode: default
+content:
+  field_multimedia:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: bloque_multimedia
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  langcode: true

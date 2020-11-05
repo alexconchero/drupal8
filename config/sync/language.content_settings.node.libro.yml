@@ -1,0 +1,18 @@
+uuid: f61d379a-b141-481a-a69d-5f38893c047f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.libro
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.libro
+target_entity_type_id: node
+target_bundle: libro
+default_langcode: site_default
+language_alterable: false

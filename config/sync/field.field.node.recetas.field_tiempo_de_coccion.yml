@@ -1,0 +1,19 @@
+uuid: 5c17b1aa-a990-4120-bb63-cc353d87f739
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tiempo_de_coccion
+    - node.type.recetas
+id: node.recetas.field_tiempo_de_coccion
+field_name: field_tiempo_de_coccion
+entity_type: node
+bundle: recetas
+label: 'Tiempo de coccion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

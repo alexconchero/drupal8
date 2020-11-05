@@ -1,0 +1,145 @@
+uuid: 8339bc50-c44e-4fa8-9ff9-5af06b253f73
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.tienda.body
+    - field.field.node.tienda.field_localizacion
+    - field.field.node.tienda.field_pa
+    - node.type.tienda
+  module:
+    - geofield_map
+    - path
+    - publication_date
+    - text
+id: node.tienda.default
+targetEntityType: node
+bundle: tienda
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_localizacion:
+    weight: 122
+    settings:
+      map_google_places:
+        places_additional_options: ''
+        places_control: false
+      map_library: leaflet
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      map_dimensions:
+        width: 100%
+        height: 450px
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      geoaddress_field:
+        field: '0'
+        disabled: true
+        hidden: false
+      default_value:
+        lat: !!float 0
+        lon: !!float 0
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      html5_geolocation: false
+      map_google_api_key: ''
+      map_geocoder:
+        control: 0
+        settings:
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          options: ''
+      zoom_level: 5
+    third_party_settings: {  }
+    type: geofield_map
+    region: content
+  field_pa:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  published_at:
+    type: publication_date_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

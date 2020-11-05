@@ -1,0 +1,10 @@
+uuid: 6001a416-5ab5-4921-8fd5-070922e4957e
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.mi_video
+label: 'Mi video'
+targetEntityType: media
+cache: true

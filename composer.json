@@ -1,0 +1,98 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.8",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/admin_toolbar": "^2.4",
+        "drupal/adminimal_admin_toolbar": "^1.11",
+        "drupal/adminimal_theme": "^1.6",
+        "drupal/bootstrap_barrio": "^5.1",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "8.9.7",
+        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/efs": "^1.1",
+        "drupal/field_group": "^3.1",
+        "drupal/geofield": "^1.16",
+        "drupal/geofield_map": "^2.67",
+        "drupal/ip_language_negotiation": "^1.1",
+        "drupal/layout_builder_modal": "^1.1",
+        "drupal/layout_builder_restrictions": "^2.7",
+        "drupal/layout_settings": "1.x-dev",
+        "drupal/menus_attribute": "^1.1",
+        "drupal/publication_date": "^2.0@beta",
+        "drupal/swiftmailer": "^2.0@beta",
+        "drupal/views_data_export": "^1.0",
+        "drupal/views_infinite_scroll": "^1.7",
+        "drupal/webform": "^5.22",
+        "drush/drush": "^9.7.1 | ^10.0.0",
+        "vlucas/phpdotenv": "^4.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^8.8.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        }
+    }
+}

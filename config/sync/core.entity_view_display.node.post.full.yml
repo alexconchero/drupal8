@@ -1,0 +1,256 @@
+uuid: ad8e6346-677e-4e04-adc8-2005831b1c7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.post.body
+    - field.field.node.post.field_categorias_post
+    - field.field.node.post.field_imagenes
+    - field.field.node.post.field_subtitulo
+    - node.type.post
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          icon_map:
+            layout:
+              wrapper: 0
+              layout: 1
+            rows:
+              - 0
+            regions:
+              content: 0
+          icon_map_settings:
+            layout:
+              wrapper:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+              layout:
+                custom_classes_status: 1
+                custom_classes:
+                  classes: container
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+            rows:
+              -
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: ''
+            regions:
+              content:
+                custom_classes_status: 0
+                custom_classes:
+                  classes: ''
+                background_status: 0
+                background:
+                  image: {  }
+                  image_style: ''
+                  css_settings:
+                    image_selector: ''
+                    image_z_index: ''
+                    image_color: '#000000'
+                    image_x: ''
+                    image_y: ''
+                    image_attachment: null
+                    image_repeat: null
+                    image_background_size: ''
+                    image_background_size_ie8: 0
+                    image_gradient: ''
+                    image_media_query: ''
+                    image_important: 0
+                    image_path_format: absolute
+        components:
+          84c0e40a-c2b5-484b-9a95-4bb26e3110e4:
+            uuid: 84c0e40a-c2b5-484b-9a95-4bb26e3110e4
+            region: content
+            configuration:
+              id: 'extra_field_block:node:post:titulo_teaser'
+              label: Titulo
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          418697f8-03e0-4aef-9b02-dbe396cce104:
+            uuid: 418697f8-03e0-4aef-9b02-dbe396cce104
+            region: content
+            configuration:
+              id: 'field_block:node:post:field_imagenes'
+              label: Imagenes
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: post_image
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          b5b6d29f-ece0-46d3-b461-da96e0bbcac0:
+            uuid: b5b6d29f-ece0-46d3-b461-da96e0bbcac0
+            region: content
+            configuration:
+              id: 'field_block:node:post:field_categorias_post'
+              label: 'Categorias post'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          3f8b1378-7c45-491b-bf83-5d0d645140c3:
+            uuid: 3f8b1378-7c45-491b-bf83-5d0d645140c3
+            region: content
+            configuration:
+              id: 'field_block:node:post:field_subtitulo'
+              label: Subtitulo
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          0b90b38c-a564-4507-843c-6fb26e00a298:
+            uuid: 0b90b38c-a564-4507-843c-6fb26e00a298
+            region: content
+            configuration:
+              id: 'field_block:node:post:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+id: node.post.full
+targetEntityType: node
+bundle: post
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categorias_post:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_imagenes:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_subtitulo:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

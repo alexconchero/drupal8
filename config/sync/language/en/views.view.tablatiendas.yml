@@ -1,0 +1,50 @@
+display:
+  default:
+    display_options:
+      filters:
+        status_1:
+          expose:
+            description: ''
+          group_info:
+            description: ''
+      title: 'Shop Table'
+      fields:
+        field_localizacion:
+          label: 'Localizacion En'
+        field_pa:
+          label: 'pais En'
+        created:
+          label: 'Fecha En'
+        changed:
+          label: 'Modificado En'
+        status:
+          label: 'Published En'
+  page_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p><a href=\"\">Create</a> <a href=\"/descarga\">DowloadCSV</a></p>\r\n"
+            format: basic_html
+      fields:
+        status:
+          label: 'Published En'
+        created:
+          label: Date
+        changed:
+          label: 'Date last modification'
+        field_pa:
+          label: Country
+        field_habitantes:
+          label: People
+        nothing:
+          label: Edit
+          alter:
+            text: '<a href="">Edit</a>'
+        nothing_1:
+          label: Delete
+          alter:
+            text: '<a href="">Delete</a>'
+        translation_link:
+          label: Translate
+          text: ''

@@ -1,0 +1,22 @@
+uuid: 2f5a91b4-edda-47fc-a57c-f72fa08788ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.status
+field_name: status
+entity_type: node
+bundle: page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

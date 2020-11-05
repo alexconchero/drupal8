@@ -1,0 +1,8 @@
+uuid: 9ee7305c-a99a-49dd-9fbd-5d6218d5325b
+langcode: es
+status: true
+dependencies: {  }
+name: Pais
+vid: pais
+description: ''
+weight: 0

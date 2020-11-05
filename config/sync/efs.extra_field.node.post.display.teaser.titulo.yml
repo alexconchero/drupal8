@@ -1,0 +1,16 @@
+uuid: 024708e9-de57-4419-b438-86acbe96b69b
+langcode: es
+status: true
+dependencies: {  }
+id: node.post.display.teaser.titulo
+label: Titulo
+field_name: titulo
+entity_type: node
+bundle: post
+context: display
+mode: teaser
+plugin: entity_label
+weight: null
+settings:
+  wrapper: h1
+  class: post-title

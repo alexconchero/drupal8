@@ -1,0 +1,18 @@
+uuid: 5677ff47-27d3-4be4-b428-bf94fdc724bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas_libros
+id: taxonomy_term.etiquetas_libros.name
+field_name: name
+entity_type: taxonomy_term
+bundle: etiquetas_libros
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

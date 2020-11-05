@@ -1,0 +1,38 @@
+uuid: 62ccf404-e15f-401a-b011-b4d52c14646f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.libro_full
+    - field.field.media.image.field_media_image
+    - image.style.libro
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.libro_full
+targetEntityType: media
+bundle: image
+mode: libro_full
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: libro
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

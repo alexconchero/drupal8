@@ -1,0 +1,37 @@
+uuid: 7b5a950d-f8b6-4251-bc5e-bc9f438ddfd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.bloque_multimedia
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
+_core:
+  default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
+id: media.video.bloque_multimedia
+targetEntityType: media
+bundle: video
+mode: bloque_multimedia
+content:
+  field_media_video_file:
+    type: file_video
+    weight: 0
+    label: visually_hidden
+    settings:
+      controls: true
+      multiple_file_display_type: tags
+      width: 1024
+      height: 500
+      autoplay: false
+      loop: false
+      muted: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

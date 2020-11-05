@@ -1,0 +1,30 @@
+uuid: 1c3feb0e-3359-4efd-98c8-c5e567eb082f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - media.type.remote_video
+    - media.type.video
+    - node.type.recetas
+id: node.recetas.field_video
+field_name: field_video
+entity_type: node
+bundle: recetas
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: f35efab9-a308-4681-9ef7-dc268fc5ceae
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.image_text
+id: block_content.image_text.changed
+field_name: changed
+entity_type: block_content
+bundle: image_text
+label: Modificado
+description: 'La fecha en la que el bloque personalizado se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

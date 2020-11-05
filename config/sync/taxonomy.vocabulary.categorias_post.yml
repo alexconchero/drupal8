@@ -1,0 +1,8 @@
+uuid: 66158000-d054-44e6-9074-55f27468173e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorias post'
+vid: categorias_post
+description: ''
+weight: 0

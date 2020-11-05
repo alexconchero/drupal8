@@ -1,0 +1,10 @@
+uuid: fe13c8bc-e7db-40a2-9abf-1d7402cdf8fb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.destacado_home
+label: 'Destacado home'
+targetEntityType: node
+cache: true

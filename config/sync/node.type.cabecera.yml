@@ -1,0 +1,18 @@
+uuid: e2ed5ebe-e5c8-4e32-8a0a-43f2d08e79b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: cabecera
+type: cabecera
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

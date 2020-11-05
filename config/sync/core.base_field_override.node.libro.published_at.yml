@@ -1,0 +1,20 @@
+uuid: 31889a68-2bc6-4fa1-bd52-9c547ed4a9a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.libro
+  module:
+    - publication_date
+id: node.libro.published_at
+field_name: published_at
+entity_type: node
+bundle: libro
+label: 'Publicado en'
+description: 'Keep the publication timestamp for each node.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: published_at

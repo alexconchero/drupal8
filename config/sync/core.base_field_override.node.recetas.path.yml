@@ -1,0 +1,20 @@
+uuid: c32fb68d-afdb-47b9-8925-c5de58343851
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.recetas
+  module:
+    - path
+id: node.recetas.path
+field_name: path
+entity_type: node
+bundle: recetas
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

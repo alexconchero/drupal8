@@ -1,0 +1,10 @@
+uuid: 8c9175d1-e8d4-496d-a80f-171331ea8bb7
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.bloque_multimedia
+label: 'Bloque multimedia'
+targetEntityType: media
+cache: true

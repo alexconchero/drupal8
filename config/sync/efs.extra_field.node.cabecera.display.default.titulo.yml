@@ -1,0 +1,14 @@
+uuid: ddc980d1-3b47-4870-ad33-2ac2646418ff
+langcode: es
+status: true
+dependencies: {  }
+id: node.cabecera.display.default.titulo
+label: Titulo
+field_name: titulo
+entity_type: node
+bundle: cabecera
+context: display
+mode: default
+plugin: entity_label
+weight: null
+settings: {  }

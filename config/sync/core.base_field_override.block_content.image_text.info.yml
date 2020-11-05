@@ -1,0 +1,18 @@
+uuid: 78f7781b-3474-4326-81d4-2dec34415ca8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.image_text
+id: block_content.image_text.info
+field_name: info
+entity_type: block_content
+bundle: image_text
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

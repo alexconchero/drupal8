@@ -1,0 +1,22 @@
+uuid: 195a71e1-4c4b-4d99-a9c5-6686df016810
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.status
+field_name: status
+entity_type: media
+bundle: audio
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

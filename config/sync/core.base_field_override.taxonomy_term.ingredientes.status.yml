@@ -1,0 +1,22 @@
+uuid: 14647156-1965-4908-ab10-efc05c8631f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingredientes
+id: taxonomy_term.ingredientes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: ingredientes
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

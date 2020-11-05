@@ -1,0 +1,20 @@
+uuid: 450a2512-a4b7-4171-bfcb-2fc4f13f96dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.landing
+  module:
+    - path
+id: node.landing.path
+field_name: path
+entity_type: node
+bundle: landing
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

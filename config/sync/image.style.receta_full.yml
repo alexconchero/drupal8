@@ -1,0 +1,15 @@
+uuid: 1391b575-8ced-4e53-9a1b-434f95c66041
+langcode: es
+status: true
+dependencies: {  }
+name: receta_full
+label: 'Receta full'
+effects:
+  ec06767b-82db-405c-ac92-5f7034de0780:
+    uuid: ec06767b-82db-405c-ac92-5f7034de0780
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 500
+      anchor: center-center

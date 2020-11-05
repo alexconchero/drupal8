@@ -1,0 +1,22 @@
+uuid: 576e6cb4-a537-4a9e-959a-d7f01dd80489
+langcode: es
+status: true
+dependencies:
+  theme:
+    - cocina
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: cocina_local_tasks
+theme: cocina
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

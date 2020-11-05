@@ -1,0 +1,16 @@
+uuid: 1816dcb2-5661-417e-ab22-fa06bc649a46
+langcode: es
+status: true
+dependencies: {  }
+id: node.recetas.display.default.titulo
+label: Titulo
+field_name: titulo
+entity_type: node
+bundle: recetas
+context: display
+mode: default
+plugin: entity_label
+weight: null
+settings:
+  wrapper: h1
+  class: ''

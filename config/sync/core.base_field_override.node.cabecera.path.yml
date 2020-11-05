@@ -1,0 +1,20 @@
+uuid: 947ca55c-6759-4de5-8231-5984f9382d0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cabecera
+  module:
+    - path
+id: node.cabecera.path
+field_name: path
+entity_type: node
+bundle: cabecera
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,23 @@
+uuid: 170295a0-c166-42b9-afbc-648fef09f534
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recetas
+  module:
+    - text
+id: node.recetas.body
+field_name: body
+entity_type: node
+bundle: recetas
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

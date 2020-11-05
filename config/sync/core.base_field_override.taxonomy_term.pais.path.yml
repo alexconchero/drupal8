@@ -1,0 +1,20 @@
+uuid: bba7f919-893c-44a3-96d2-7ea60b1a87f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pais
+  module:
+    - path
+id: taxonomy_term.pais.path
+field_name: path
+entity_type: taxonomy_term
+bundle: pais
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

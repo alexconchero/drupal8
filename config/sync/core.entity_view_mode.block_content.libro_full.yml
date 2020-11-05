@@ -1,0 +1,10 @@
+uuid: 3f9307b9-8da8-445e-b739-8017daf9f313
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.libro_full
+label: 'Libro full'
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,18 @@
+uuid: 073886eb-a909-475a-b596-3d92964032c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cabecera
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.cabecera
+target_entity_type_id: node
+target_bundle: cabecera
+default_langcode: site_default
+language_alterable: false

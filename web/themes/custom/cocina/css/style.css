@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ 
+ .navbar-brand img{
+ 	width: 65px;
+ 	height: auto;
+ }
