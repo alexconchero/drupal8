@@ -1,0 +1,7 @@
+module1.theme:
+  path: '/module1/theme'
+  defaults:
+    _controller: '\Drupal\module1\Controller\Module1Controller::render'
+    _title: 'List controller'
+  requirements:
+    _permission: 'access content'
