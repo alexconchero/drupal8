@@ -1,0 +1,7 @@
+name: "Module 2"
+description: "Plugin"
+package: Custom
+
+type: module
+core_version_requirement: ^8 || ^9
+core: 8.x

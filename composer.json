@@ -27,6 +27,7 @@
         "drupal/core": "8.9.7",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/efs": "^1.1",
+        "drupal/examples": "^3.0",
         "drupal/field_group": "^3.1",
         "drupal/geofield": "^1.16",
         "drupal/geofield_map": "^2.67",
