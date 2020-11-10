@@ -1,0 +1,13 @@
+<div>
+  <h1>{{ title }}</h1>
+  <ul>
+    {% for item in items %}
+      <li>
+        <h2>{{ item.title }}</h2>
+        <div>
+            <p>{{ item.body }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

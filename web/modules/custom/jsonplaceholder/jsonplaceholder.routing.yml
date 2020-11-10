@@ -1,0 +1,7 @@
+jsonplaceholder.posts:
+  path: '/jsonplaceholder/posts'
+  defaults:
+    _controller: '\Drupal\jsonplaceholder\Controller\JsonplaceHolderController::render'
+    _title: 'Post controller'
+  requirements:
+    _permission: 'access content'
