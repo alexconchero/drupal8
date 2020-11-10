@@ -1,0 +1,29 @@
+uuid: 30b1bf10-bd3b-4405-afc3-bed43d1a5edd
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - module2
+  theme:
+    - cocina
+id: faxblock
+theme: cocina
+region: content
+weight: -6
+provider: null
+plugin: fax_block
+settings:
+  id: fax_block
+  label: 'Fax block'
+  provider: module2
+  label_display: visible
+  fax_number: '23'
+visibility:
+  language:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
